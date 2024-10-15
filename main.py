@@ -2,6 +2,8 @@ import os
 # from os.path import isfile
 from PyPDF2 import PdfReader, PdfWriter
 import argparse
+from helpers import create_basePaths
+
 
 SRC_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -26,6 +28,7 @@ def main(file_path:str):
             pdfWriter.write(output_pdf_file)
 
 if __name__ == '__main__':
+    create_basePaths()
     parser = argparse.ArgumentParser(description="PDF Splitter")
     parser.add_argument("file_path", help="File path of pdf to split")
     args = parser.parse_args()
