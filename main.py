@@ -6,7 +6,6 @@ import argparse
 from helpers import create_basePaths
 from pdf2csv import *
 
-
 SRC_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def main(file_path:str, _export:Optional[str]):
