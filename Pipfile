@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 pypdf2 = "*"
 reportlab = "*"
+pandas = "*"
+pdfplumber = "*"
 
 [dev-packages]
 
